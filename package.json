@@ -1,0 +1,37 @@
+{
+  "name": "Cards Stack",
+  "version": "1.0.0",
+  "main": "src/index.tsx",
+  "description": "Animating a stack of cards with @use-gesture/react's useDrag hook, useSprings and interpolation",
+  "keywords": [
+    "cards",
+    "use-gesture",
+    "useDrag",
+    "useSprings",
+    "interpolation"
+  ],
+  "dependencies": {
+    "@react-spring/web": "*",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "5.0.1",
+    "react-use-gesture": "^9.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.3",
+    "typescript": "^4.8.3"
+  }
+}
