@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useSprings, animated, to as interpolate } from '@react-spring/web'
 import { useDrag } from 'react-use-gesture'
 
-import styles from './styles.module.css'
+import styles from './bimashastyles.module.css'
 
 const cards = [
   'https://scontent.fdac157-1.fna.fbcdn.net/v/t39.30808-6/320579029_928475384804106_6059389954261765931_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=kCDqQtEZ7HQAX8fDzGd&_nc_ht=scontent.fdac157-1.fna&oh=00_AfCx9K_nse-IchD-8nk-lMKb_7rCZWWKIINFB0Kudx_q9Q&oe=63AE6906',
@@ -62,7 +62,6 @@ function Deck() {
     <>
       {props.map(({ x, y, rot, scale }, i) => (
         <animated.div className={styles.deck} key={i} style={{ x, y }}>
-          {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
           <animated.div
             {...bind(i)}
             style={{
